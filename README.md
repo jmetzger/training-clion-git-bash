@@ -2,10 +2,11 @@
 
 ## Agenda 
 
-  1. Geschichte / Grundlagen 
+  1. History / Basics 
      * [GIT Pdf](http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf)
      
-  1. pycharm 
+  1. CLion
+
      * [Disable ESC when using vi as editor](pycharm/disable-esc.md)
      
   1. Commands (with tipps & tricks) 
