@@ -1,4 +1,4 @@
-# GIT-Training 
+# GIT-Training (CLion & git bash (Windows)) 
 
 ## Agenda 
 
