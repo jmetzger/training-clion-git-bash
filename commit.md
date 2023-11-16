@@ -1,5 +1,11 @@
 # git commit 
 
+## the best and easiest to commit
+
+```
+git commit -am "[INF-00001] Essentials changes to todo.txt"
+```
+
 ## commit with multiple lines on commandline (without editor) 
 
 ```
