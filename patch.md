@@ -3,8 +3,9 @@
 ## Generate the patch 
 
 ```
-# in the 1st repo 
-git diff > some-changes.patch
+# in the 1st repo
+git diff <commit-id> HEAD > some-changes.patch 
+git diff 1a4f HEAD > some-changes.patch
 ```
 
 ## Apply the diff:
