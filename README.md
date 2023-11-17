@@ -9,7 +9,7 @@
 
      * [Disable ESC when using vi as editor](pycharm/disable-esc.md)
      
-  1. Commands (with tipps & tricks) 
+  1. Commands (with tipps & tricks)
      * [git add + Tipps & Tricks](add.md)
      * [git commit](commit.md)
      * [git log](log.md)
