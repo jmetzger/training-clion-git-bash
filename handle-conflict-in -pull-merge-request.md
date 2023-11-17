@@ -4,11 +4,11 @@
 
   * You have a create a branch 
   * you have pushed that branch to github e.g. git pull origin feature/xyz 
-  * you cannot merge with github, because you see a conflict 
+  * you cannot merge with github/bitbucket, because you see a conflict 
   
 ## Conflict why ?
 
-  * You have because the branch you want to into has changes you do not have in branch
+  * You have the conflict because the branch you want to  merge into has changes you do not have in branch
   
 ## How to solve ? 
 
