@@ -29,6 +29,7 @@
   1. Advanced Commands 
      * [git reflog](reflog.md) 
      * [git reset - Back in Time](reset.md)
+     * [git diff/apply - Creating/Applying a patch](patch.md)
     
   1. Tips & Tricks (Aliases)
      * [using multi-command aliases](alias.md)   
