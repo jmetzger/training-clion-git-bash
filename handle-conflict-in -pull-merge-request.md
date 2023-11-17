@@ -16,7 +16,7 @@
   * Push again.
   * Merge, Yeah, Done ! 
   
-## Walkthrough (Version 1)
+## Walkthrough (Version 1) - most simplistic version
 
 ```
 # You have conflict in pull request within github
