@@ -16,14 +16,15 @@
   * Push again.
   * Merge, Yeah, Done ! 
   
-## Walkthrough
+## Walkthrough (Version 1)
 
 ```
 # You have conflict in pull request within github
 # on your local system with branch
+# feature/4711 is active 
 git branch 
 * feature/4711
-* master
+master
 
 # you fetch the changes online from the branch master 
 # and integrate them into.your branch -> feature/4711 
@@ -33,9 +34,13 @@ git pull origin master
 # the push again 
 git push origin feature/4711 
 
-# Now merge the branch within the pull-request menu 
+# Now merge the branch within the pull-request menu
+```
+
+## Walkthrough (Version 2) - If you want to do pull --rebase on feature-branch 
 
 
+```
 # Delete unneeded feature branch - online 
 
 # Cleanup locally 
