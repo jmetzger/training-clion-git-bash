@@ -28,7 +28,10 @@
    
   1. Advanced Commands 
      * [git reflog](reflog.md) 
-     * [git reset - Back in Time](reset.md)   
+     * [git reset - Back in Time](reset.md)
+    
+  1. Tips & Tricks (Aliases)
+     * [using multi-command aliases](alias.md)   
      
   1. Tipps & tricks 
      * [Beautified log](beautify-log.md)
