@@ -1,14 +1,15 @@
-# GIT-Training 
+# GIT-Training (CLion & git bash (Windows)) - English version
 
 
 ## Agenda
-  1. Geschichte / Grundlagen 
+  1. History / Basics 
      * [GIT Pdf](http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf)
      
-  1. pycharm 
+  1. CLion
+
      * [Disable ESC when using vi as editor](#disable-esc-when-using-vi-as-editor)
      
-  1. Commands (with tipps & tricks) 
+  1. Commands (with tipps & tricks)
      * [git add + Tipps & Tricks](#git-add-+-tipps--tricks)
      * [git commit](#git-commit)
      * [git log](#git-log)
@@ -28,6 +29,10 @@
   1. Advanced Commands 
      * [git reflog](#git-reflog)
      * [git reset - Back in Time](#git-reset---back-in-time)
+     * [git diff/apply - Creating/Applying a patch](#git-diffapply---creatingapplying-a-patch)
+    
+  1. Tips & Tricks (Aliases)
+     * [using multi-command aliases](#using-multi-command-aliases)
      
   1. Tipps & tricks 
      * [Beautified log](#beautified-log)
@@ -102,20 +107,20 @@
 
 <div class="page-break"></div>
 
-## Geschichte / Grundlagen 
+## History / Basics 
 
 ### GIT Pdf
 
   * http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf
 
-## pycharm 
+## CLion
 
 ### Disable ESC when using vi as editor
 
 
   * https://intellij-support.jetbrains.com/hc/en-us/community/posts/360003508579-How-to-stop-Escape-from-Leaving-Terminal
 
-## Commands (with tipps & tricks) 
+## Commands (with tipps & tricks)
 
 ### git add + Tipps & Tricks
 
@@ -134,6 +139,12 @@ git add -A
 
 ### git commit
 
+
+### the best and easiest to commit
+
+```
+git commit -am "[INF-00001] Essentials changes to todo.txt"
+```
 
 ### commit with multiple lines on commandline (without editor) 
 
@@ -447,6 +458,35 @@ touch myfile
 git add myfile 
 ## ich will dieses file nicht !!!!! 
 git reset --hard HEAD 
+```
+
+### git diff/apply - Creating/Applying a patch
+
+
+### Generate the patch 
+
+```
+## in the 1st repo
+git diff <commit-id> HEAD > some-changes.patch 
+git diff 1a4f HEAD > some-changes.patch
+```
+
+### Apply the diff:
+
+```
+## in the 2nd repo
+git apply /path/to/some-changes.patch
+```
+
+## Tips & Tricks (Aliases)
+
+### using multi-command aliases
+
+
+### Multi-Command Aliases 
+
+```
+git config alias.chs '!git checkout $1 && git status'
 ```
 
 ## Tipps & tricks 
@@ -843,7 +883,7 @@ git pull --rebase
 git push
 Password for 'https://erding2017@bitbucket.org':
 To https://bitbucket.org/erding2017/git-remote-jochen.git
- ! [rejected](fetch first)
+ ! [rejected]        master -> master (fetch first)
 error: failed to push some refs to 'https://erding2017@bitbucket.org/erding2017/git-remote-jochen.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
@@ -869,7 +909,7 @@ git push
 git push
 Password for 'https://erding2017@bitbucket.org':
 To https://bitbucket.org/erding2017/git-remote-jochen.git
- ! [rejected](fetch first)
+ ! [rejected]        master -> master (fetch first)
 ....
 ## Step 2: Integrate changes from online 
 git pull
